@@ -2,12 +2,12 @@
 
 import type { Data } from "@measured/puck";
 import { Puck } from "@measured/puck";
-import config from "../../../puck.config";
+import customConfig from "../../../puck.config";
 
 export function Client({ path, data }: { path: string; data: Partial<Data> }) {
   return (
     <Puck
-      config={config}
+      config={customConfig}
       data={data}
       onPublish={async (data) => {
         await fetch("/puck/api", {
@@ -18,3 +18,11 @@ export function Client({ path, data }: { path: string; data: Partial<Data> }) {
     />
   );
 }
+
+// export default function EditorPage() {
+//   return (
+//     <PuckProvider config={config}>
+//       <Puck />
+//     </PuckProvider>
+//   );
+// }

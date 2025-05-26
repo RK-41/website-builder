@@ -14,7 +14,7 @@ The `next` recipe showcases one of the most powerful ways to implement Puck usin
 Run the generator and enter `next` when prompted
 
 ```
-npx create-puck-app my-app
+npx create-puck-app puck-next
 ```
 
 Start the server
