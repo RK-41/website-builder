@@ -11,6 +11,13 @@ import { ProfileConfig } from "./app/components/Profile";
 import { CardAConfig, CardBConfig, CardCConfig } from "./app/components/cards";
 import { FaqSectionConfig } from "./app/components/FAQSection";
 import { ExecutiveTeamConfig } from "./app/components/ExecutiveTeam";
+import { HeaderConfig } from "./app/components/templateA/Header";
+import { HeroSectionConfigA } from "./app/components/templateA/HeroSection";
+import { DynamicButtonConfig } from "./app/components/DynamicButton";
+import { CategoriesConfig } from "./app/components/templateA/Categories";
+import { ContactSectionConfig } from "./app/components/templateA/ContactSection";
+import { FooterConfigA } from "./app/components/templateA/Footer";
+import { ColorPickerConfig } from "./app/components/ColorPicker";
 
 // growth, partners, contact us, faqs, hero with para
 // type Props = {
@@ -42,11 +49,24 @@ export const customConfig = {
     CardA: CardAConfig,
     CardB: CardBConfig,
     CardC: CardCConfig,
+
+    Header: HeaderConfig,
+    HeroSectionA: HeroSectionConfigA,
+    Categories: CategoriesConfig,
+    ContactSection: ContactSectionConfig,
+    FooterA: FooterConfigA,
+
+    ColorPicker: ColorPickerConfig,
+    DynamicButton: DynamicButtonConfig,
   },
   categories: {
+    templateA: {
+      title: 'Template A',
+      components: ['Header', 'HeroSectionA', 'Categories', 'ContactSection', 'FooterA',]
+    },
     navigation: {
       title: 'Navigation',
-      components: ['Navbar', 'PNavbar', 'TabNavigation', 'Link'],
+      components: ['Navbar', 'TabNavigation', 'Link'],
     },
     layout: {
       title: 'Layout',

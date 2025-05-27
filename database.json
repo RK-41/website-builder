@@ -1,1 +1,472 @@
-{"/":{"root":{"props":{}},"content":[{"type":"Navbar","props":{"title":"My Navbar","position":"static","elevation":0,"links":[{"href":"#","children":"Features","variant":"text","color":"primary","underline":"hover","sx":{}},{"href":"#","children":"Pricing","variant":"text","color":"primary","underline":"hover","sx":{}},{"href":"#","children":"Blog","variant":"text","color":"primary","underline":"hover","sx":{}}],"id":"Navbar-de2f77e8-fd0e-4662-99e1-780796368b4b","color":"inherit"}},{"type":"HeroSection","props":{"title":"Best place choose your clothes","subtitle":"em ipsum dolor sit amet, consectetur adipisicing elit...","buttonText":"Shop N","imageUrl":"https://merakiui.com/images/components/Catalogue-pana.svg","backgroundColor":"background.default","id":"HeroSection-75a73be7-7cd9-4eb3-b222-f6088d664e6e"}},{"type":"FeatureSection","props":{"heading":"Explore our awesome","highlight":"Components","videoSrc":"https://player.vimeo.com/video/525707984","features":[{"icon":"ContentCopyIcon","title":"Copy & paste components","description":"Lorem ipsum..."},{"icon":"SettingsIcon","title":"Zero Configuration","description":"Lorem ipsum..."},{"icon":"NightlightIcon","title":"Elegant Dark Mode","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos."},{"icon":"StarIcon","title":"Simple & clean designs","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos."}],"id":"FeatureSection-33beea7a-acbd-4c8a-b762-905f64dd0060"}},{"type":"AdvancedTable","props":{"title":"Team Members","description":"Manage user access and roles for your project.","filterPlaceholder":"Search users...","avatarField":"avatar","badgeField":"status","badgeColors":{"Active":"success","Pending":"warning","Banned":"error"},"columns":[{"label":"Name","field":"avatar","sortable":false},{"label":"Email","field":"email","sortable":true},{"label":"Status","field":"status","sortable":true}],"rows":[{"name":"Jane Doe","avatar":"https://i.pravatar.cc/100?img=1","email":"jane@example.com","status":"Active"},{"name":"John Smith","avatar":"https://i.pravatar.cc/100?img=2","email":"john@example.com","status":"Pending"},{"name":"Alice Blue","avatar":"https://i.pravatar.cc/100?img=3","email":"alice@example.com","status":"Banned"}],"id":"AdvancedTable-ab39980d-5983-4708-8453-bb2048fa0c7b"}},{"type":"Testimonials","props":{"heading":"What our","highlight":"customers are saying","testimonials":[{"quote":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.","name":"Robbert","title":"CTO, Robert Consultency","avatar":"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=880&q=80"},{"quote":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.","name":"Jeny Doe","title":"CEO, Jeny Consultency","avatar":"https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=761&q=80"},{"quote":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.","name":"Mia Brown","title":"Marketing Manager at Stech","avatar":"https://images.unsplash.com/photo-1499470932971-a90681ce8530?auto=format&fit=crop&w=1470&q=80"},{"quote":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.","name":"Lead Designer","title":"Developer at Stech","avatar":"https://images.unsplash.com/photo-1488508872907-592763824245?auto=format&fit=crop&w=1470&q=80"}],"id":"Testimonials-25a1620e-8230-4848-9449-c77ebf345633"}},{"type":"FAQ","props":{"title":"Frequently asked questions","faqs":[{"question":"How i can play for my appoinment ?","answer":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?"},{"question":"Is the cost of the appoinment covered by private health insurance?","answer":"add answer here..."},{"question":"Do i need a referral?","answer":"add answer here..."},{"question":"What are your opening house?","answer":"add answer here..."},{"question":"What can i expect at my first consultation?","answer":"add answer here..."}],"id":"FAQ-c8dc5bd0-6da5-4cbe-9d29-fefcdde94fd0"}},{"type":"ExecutiveTeam","props":{"title":"Our Executive Team","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique.","members":[{"name":"Arthur Melo","role":"Design Director","image":"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=880&q=80","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nesciunt officia aliquam neque optio?","linkedin":"#","discord":"#","github":"#"},{"name":"Amelia Anderson","role":"Lead Developer","image":"https://images.unsplash.com/photo-1531590878845-12627191e687?auto=format&fit=crop&w=764&q=80","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nesciunt officia aliquam neque optio?","linkedin":"#","discord":"#","github":"#"}],"id":"ExecutiveTeam-bcd30c48-1b70-4ecf-a620-e8bc0b2e93e0"}},{"type":"Footer","props":{"logo":{"src":"https://merakiui.com/images/full-logo.svg","alt":"Logo","href":"#"},"navLinks":[{"label":"Home","href":"#"},{"label":"About","href":"#"},{"label":"Teams","href":"#"},{"label":"Privacy","href":"#"},{"label":"Cookies","href":"#"},{"label":"Google","href":"https://google.com"}],"socialLinks":[{"icon":"Reddit","label":"Reddit","href":"#"},{"icon":"Facebook","label":"Facebook","href":"#"},{"icon":"GitHub","label":"GitHub","href":"#"},{"label":"extra","href":"https://google.com","icon":"Reddit"}],"copyright":"© Copyrigh 2021. All Rights Reserved.","id":"Footer-56956bf4-66ea-44b2-86a7-d4ee55406a9f"}}],"zones":{}},"/profile":{"root":{"props":{}},"content":[{"type":"Navbar","props":{"title":"My Navbar","position":"static","elevation":0,"links":[{"href":"#","children":"Features","variant":"text","color":"primary","underline":"hover","sx":{}},{"href":"#","children":"Pricing","variant":"text","color":"primary","underline":"hover","sx":{}},{"href":"#","children":"Blog","variant":"text","color":"primary","underline":"hover","sx":{}}],"id":"Navbar-3662d94d-91d8-4ff5-9a6b-d509c9488d3b"}},{"type":"Profile","props":{"name":"Alex Johnson","title":"Senior Product Designer","bio":"Alex is a passionate designer with over 10 years of experience creating intuitive user experiences for web and mobile apps.","avatar":"https://i.pravatar.cc/150?img=15","email":"alex.johnson@example.com","phone":"+1 (555) 123-4567","location":"San Francisco, CA","socials":[{"platform":"LinkedIn","url":"https://linkedin.com/in/alexjohnson"},{"platform":"Twitter","url":"https://twitter.com/alexjohnson"},{"platform":"GitHub","url":"https://github.com/alexjohnson"}],"id":"Profile-b23ffdd0-c377-4dd5-8eab-5c5566cfc577"}}],"zones":{}}}
+{
+	"/": {
+		"root": { "props": {} },
+		"content": [
+			{
+				"type": "Header",
+				"props": {
+					"logoLabel": "LOGO",
+					"logoHref": "/",
+					"navItems": [
+						{
+							"text": "Courses",
+							"href": "/courses",
+							"textColor": "#000000",
+							"color": "primary",
+							"variant": "text",
+							"size": "medium",
+							"fullWidth": false,
+							"disableElevation": false
+						},
+						{
+							"text": "Contact Us",
+							"href": "#",
+							"textColor": "#000000",
+							"color": "primary",
+							"variant": "text",
+							"size": "medium",
+							"fullWidth": false,
+							"disableElevation": false
+						},
+						{
+							"text": "Login",
+							"href": "/auth/login",
+							"textColor": "#000000",
+							"color": "rgb(0, 117, 255)",
+							"variant": "outlined",
+							"size": "medium",
+							"fullWidth": false,
+							"disableElevation": false
+						},
+						{
+							"text": "Sign Up",
+							"href": "/auth/sign-up",
+							"textColor": "rgb(255, 255, 255)",
+							"color": "rgb(47, 143, 255)",
+							"variant": "contained",
+							"size": "medium",
+							"fullWidth": false,
+							"disableElevation": false
+						}
+					],
+					"id": "Header-66f6f153-2bfb-42c4-b26d-87b67583e1cf",
+					"backgroundColor": "rgb(255, 255, 255)",
+					"logo": {
+						"label": "LOGO",
+						"href": "/",
+						"width": 150,
+						"height": 50,
+						"color": "rgb(2, 119, 255)",
+						"image": "https://merakiui.com/images/full-logo.svg"
+					}
+				}
+			},
+			{
+				"type": "HeroSectionA",
+				"props": {
+					"heading": "Write your Headline here",
+					"subheading": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.\nLorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+					"buttons": [
+						{
+							"text": "Get Started",
+							"href": "#",
+							"variant": "contained",
+							"color": "rgb(255, 255, 255)",
+							"size": "large",
+							"fullWidth": false,
+							"disableElevation": false,
+							"textColor": "rgb(0, 163, 255)"
+						},
+						{
+							"text": "Learn More",
+							"href": "#",
+							"variant": "outlined",
+							"color": "rgb(255, 255, 255)",
+							"size": "large",
+							"fullWidth": false,
+							"disableElevation": false
+						}
+					],
+					"backgroundColor": "rgb(0, 117, 255)",
+					"headingColor": "#ffffff",
+					"subheadingColor": "rgb(243, 243, 243)",
+					"id": "HeroSectionA-c55b58b0-61e7-43ef-842a-9b5a5a4c22e0"
+				}
+			},
+			{
+				"type": "Categories",
+				"props": {
+					"heading": "All Categories",
+					"subheading": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.",
+					"headline": "Write your Headline here",
+					"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+					"sectionButtons": [
+						{
+							"text": "Get Started",
+							"href": "#",
+							"variant": "contained",
+							"textColor": "rgb(255, 255, 255)",
+							"color": "rgb(0, 117, 255)"
+						},
+						{ "text": "Get Started", "href": "#", "variant": "outlined" }
+					],
+					"sectionImage": "https://edmingle.b-cdn.net/edmingle_websitebuilder/sitebuilder/assets/designs/images/edmingle/meeting-clipped.png",
+					"id": "Categories-3bc47179-c3d1-4a85-b952-ba84c13b15d5"
+				}
+			},
+			{
+				"type": "ContactSection",
+				"props": {
+					"heading": "Write your Headline here",
+					"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.",
+					"formHeading": "Get in Touch",
+					"firstNameLabel": "Enter your first name.",
+					"lastNameLabel": "Enter your last name.",
+					"emailLabel": "Enter your email ID.",
+					"phoneLabel": "+91 Mobile Number",
+					"messageLabel": "Write your Message here.",
+					"submitButtonText": "Submit",
+					"backgroundColor": "rgb(255, 255, 255)",
+					"id": "ContactSection-7e083e7c-57b6-4b58-9401-c21fba41d9b9",
+					"submitButton": {
+						"textColor": "rgb(252, 252, 252)",
+						"text": "Submit",
+						"color": "rgb(45, 138, 248)",
+						"size": "medium",
+						"fullWidth": true
+					},
+					"formBackgroundColor": "rgb(255, 255, 255)"
+				}
+			},
+			{
+				"type": "FooterA",
+				"props": {
+					"getInTouchHeading": "Get in touch",
+					"getInTouchText": "We love to hear from you. Our friendly team is always here to chat.",
+					"chatHeading": "Chat to us",
+					"chatText": "Our friendly team is here to help.",
+					"chatEmail": "dummy@edmingle.com",
+					"officeHeading": "Office",
+					"officeText": "Come say hello at our office.",
+					"officeAddress": "Akshya Nagar 1st Block 1st Cross,\nRamamurthy nagar, Bangalore-560016",
+					"phoneHeading": "Phone",
+					"phoneSchedule": "Mon - Fri from 8am to 6pm",
+					"phoneNumbers": ["+91 38574 94827", "+91 81211 21112"],
+					"copyrightText": "© 2025 Teknas",
+					"footerLinks": [
+						{ "text": "Courses", "href": "#courses" },
+						{ "text": "Contact Us", "href": "#contact" }
+					],
+					"backgroundColor": "rgb(0, 133, 229)",
+					"textColor": "rgb(255, 255, 255)",
+					"id": "FooterA-abf23bef-666c-4e13-8ca8-94ab7da8a61f"
+				}
+			}
+		],
+		"zones": {}
+	},
+	"/meraki": {
+		"root": { "props": {} },
+		"content": [
+			{
+				"type": "Navbar",
+				"props": {
+					"title": "My Navbar",
+					"position": "static",
+					"elevation": 0,
+					"links": [
+						{
+							"href": "#",
+							"children": "Features",
+							"variant": "text",
+							"color": "primary",
+							"underline": "hover",
+							"sx": {}
+						},
+						{
+							"href": "#",
+							"children": "Pricing",
+							"variant": "text",
+							"color": "primary",
+							"underline": "hover",
+							"sx": {}
+						},
+						{
+							"href": "#",
+							"children": "Blog",
+							"variant": "text",
+							"color": "primary",
+							"underline": "hover",
+							"sx": {}
+						}
+					],
+					"id": "Navbar-de2f77e8-fd0e-4662-99e1-780796368b4b",
+					"color": "inherit"
+				}
+			},
+			{
+				"type": "HeroSection",
+				"props": {
+					"title": "Best place choose your clothes",
+					"subtitle": "em ipsum dolor sit amet, consectetur adipisicing elit...",
+					"buttonText": "Shop N",
+					"imageUrl": "https://merakiui.com/images/components/Catalogue-pana.svg",
+					"backgroundColor": "background.default",
+					"id": "HeroSection-75a73be7-7cd9-4eb3-b222-f6088d664e6e"
+				}
+			},
+			{
+				"type": "FeatureSection",
+				"props": {
+					"heading": "Explore our awesome",
+					"highlight": "Components",
+					"videoSrc": "https://player.vimeo.com/video/525707984",
+					"features": [
+						{
+							"icon": "ContentCopyIcon",
+							"title": "Copy & paste components",
+							"description": "Lorem ipsum..."
+						},
+						{
+							"icon": "SettingsIcon",
+							"title": "Zero Configuration",
+							"description": "Lorem ipsum..."
+						},
+						{
+							"icon": "NightlightIcon",
+							"title": "Elegant Dark Mode",
+							"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos."
+						},
+						{
+							"icon": "StarIcon",
+							"title": "Simple & clean designs",
+							"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos."
+						}
+					],
+					"id": "FeatureSection-33beea7a-acbd-4c8a-b762-905f64dd0060"
+				}
+			},
+			{
+				"type": "AdvancedTable",
+				"props": {
+					"title": "Team Members",
+					"description": "Manage user access and roles for your project.",
+					"filterPlaceholder": "Search users...",
+					"avatarField": "avatar",
+					"badgeField": "status",
+					"badgeColors": {
+						"Active": "success",
+						"Pending": "warning",
+						"Banned": "error"
+					},
+					"columns": [
+						{ "label": "Name", "field": "avatar", "sortable": false },
+						{ "label": "Email", "field": "email", "sortable": true },
+						{ "label": "Status", "field": "status", "sortable": true }
+					],
+					"rows": [
+						{
+							"name": "Jane Doe",
+							"avatar": "https://i.pravatar.cc/100?img=1",
+							"email": "jane@example.com",
+							"status": "Active"
+						},
+						{
+							"name": "John Smith",
+							"avatar": "https://i.pravatar.cc/100?img=2",
+							"email": "john@example.com",
+							"status": "Pending"
+						},
+						{
+							"name": "Alice Blue",
+							"avatar": "https://i.pravatar.cc/100?img=3",
+							"email": "alice@example.com",
+							"status": "Banned"
+						}
+					],
+					"id": "AdvancedTable-ab39980d-5983-4708-8453-bb2048fa0c7b"
+				}
+			},
+			{
+				"type": "Testimonials",
+				"props": {
+					"heading": "What our",
+					"highlight": "customers are saying",
+					"testimonials": [
+						{
+							"quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.",
+							"name": "Robbert",
+							"title": "CTO, Robert Consultency",
+							"avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=880&q=80"
+						},
+						{
+							"quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.",
+							"name": "Jeny Doe",
+							"title": "CEO, Jeny Consultency",
+							"avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=761&q=80"
+						},
+						{
+							"quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.",
+							"name": "Mia Brown",
+							"title": "Marketing Manager at Stech",
+							"avatar": "https://images.unsplash.com/photo-1499470932971-a90681ce8530?auto=format&fit=crop&w=1470&q=80"
+						},
+						{
+							"quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea tempora dolores.",
+							"name": "Lead Designer",
+							"title": "Developer at Stech",
+							"avatar": "https://images.unsplash.com/photo-1488508872907-592763824245?auto=format&fit=crop&w=1470&q=80"
+						}
+					],
+					"id": "Testimonials-25a1620e-8230-4848-9449-c77ebf345633"
+				}
+			},
+			{
+				"type": "FAQ",
+				"props": {
+					"title": "Frequently asked questions",
+					"faqs": [
+						{
+							"question": "How i can play for my appoinment ?",
+							"answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum laboriosam recusandae facere dolorum veniam quia pariatur obcaecati illo ducimus?"
+						},
+						{
+							"question": "Is the cost of the appoinment covered by private health insurance?",
+							"answer": "add answer here..."
+						},
+						{
+							"question": "Do i need a referral?",
+							"answer": "add answer here..."
+						},
+						{
+							"question": "What are your opening house?",
+							"answer": "add answer here..."
+						},
+						{
+							"question": "What can i expect at my first consultation?",
+							"answer": "add answer here..."
+						}
+					],
+					"id": "FAQ-c8dc5bd0-6da5-4cbe-9d29-fefcdde94fd0"
+				}
+			},
+			{
+				"type": "ExecutiveTeam",
+				"props": {
+					"title": "Our Executive Team",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique.",
+					"members": [
+						{
+							"name": "Arthur Melo",
+							"role": "Design Director",
+							"image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=880&q=80",
+							"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nesciunt officia aliquam neque optio?",
+							"linkedin": "#",
+							"discord": "#",
+							"github": "#"
+						},
+						{
+							"name": "Amelia Anderson",
+							"role": "Lead Developer",
+							"image": "https://images.unsplash.com/photo-1531590878845-12627191e687?auto=format&fit=crop&w=764&q=80",
+							"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nesciunt officia aliquam neque optio?",
+							"linkedin": "#",
+							"discord": "#",
+							"github": "#"
+						}
+					],
+					"id": "ExecutiveTeam-bcd30c48-1b70-4ecf-a620-e8bc0b2e93e0"
+				}
+			},
+			{
+				"type": "Footer",
+				"props": {
+					"logo": {
+						"src": "https://merakiui.com/images/full-logo.svg",
+						"alt": "Logo",
+						"href": "#"
+					},
+					"navLinks": [
+						{ "label": "Home", "href": "#" },
+						{ "label": "About", "href": "#" },
+						{ "label": "Teams", "href": "#" },
+						{ "label": "Privacy", "href": "#" },
+						{ "label": "Cookies", "href": "#" },
+						{ "label": "Google", "href": "https://google.com" }
+					],
+					"socialLinks": [
+						{ "icon": "Reddit", "label": "Reddit", "href": "#" },
+						{ "icon": "Facebook", "label": "Facebook", "href": "#" },
+						{ "icon": "GitHub", "label": "GitHub", "href": "#" },
+						{ "label": "extra", "href": "https://google.com", "icon": "Reddit" }
+					],
+					"copyright": "© Copyrigh 2021. All Rights Reserved.",
+					"id": "Footer-56956bf4-66ea-44b2-86a7-d4ee55406a9f"
+				}
+			}
+		],
+		"zones": {}
+	},
+	"/profile": {
+		"root": { "props": {} },
+		"content": [
+			{
+				"type": "Navbar",
+				"props": {
+					"title": "My Navbar",
+					"position": "static",
+					"elevation": 0,
+					"links": [
+						{
+							"href": "#",
+							"children": "Features",
+							"variant": "text",
+							"color": "primary",
+							"underline": "hover",
+							"sx": {}
+						},
+						{
+							"href": "#",
+							"children": "Pricing",
+							"variant": "text",
+							"color": "primary",
+							"underline": "hover",
+							"sx": {}
+						},
+						{
+							"href": "#",
+							"children": "Blog",
+							"variant": "text",
+							"color": "primary",
+							"underline": "hover",
+							"sx": {}
+						}
+					],
+					"id": "Navbar-3662d94d-91d8-4ff5-9a6b-d509c9488d3b"
+				}
+			},
+			{
+				"type": "Profile",
+				"props": {
+					"name": "Alex Johnson",
+					"title": "Senior Product Designer",
+					"bio": "Alex is a passionate designer with over 10 years of experience creating intuitive user experiences for web and mobile apps.",
+					"avatar": "https://i.pravatar.cc/150?img=15",
+					"email": "alex.johnson@example.com",
+					"phone": "+1 (555) 123-4567",
+					"location": "San Francisco, CA",
+					"socials": [
+						{
+							"platform": "LinkedIn",
+							"url": "https://linkedin.com/in/alexjohnson"
+						},
+						{ "platform": "Twitter", "url": "https://twitter.com/alexjohnson" },
+						{ "platform": "GitHub", "url": "https://github.com/alexjohnson" }
+					],
+					"id": "Profile-b23ffdd0-c377-4dd5-8eab-5c5566cfc577"
+				}
+			}
+		],
+		"zones": {}
+	}
+}
