@@ -7,6 +7,7 @@ import {
   useTheme,
 } from '@mui/material';
 import Image from 'next/image';
+import { ComponentConfig } from '@measured/puck';
 
 export interface HeroSectionProps {
   title?: string;
@@ -57,7 +58,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   );
 };
 
-export const HeroSectionConfig = {
+// export interface HeroSectionConfigProps {
+//   title: string;
+//   subtitle: string;
+//   buttonText: string;
+//   imageUrl: string;
+//   backgroundColor: string;
+// }
+
+export const HeroSectionConfig: ComponentConfig<HeroSectionProps> = {
   label: 'Hero Section',
   fields: {
     title: {

@@ -13,11 +13,13 @@ import {
   MenuItem,
   useTheme,
   useMediaQuery,
+  Link,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useRouter } from "next/navigation";
 import { MuiColorInput } from 'mui-color-input';
 import Image from 'next/image';
+// import Link from "next/link";
 
 export interface HeaderProps {
   logo: LogoProps;
@@ -45,17 +47,17 @@ interface NavItem {
   disableElevation?: boolean;
 }
 
-const defaultLogo: LogoProps =
+export const defaultLogo: LogoProps =
 {
   label: "LOGO",
   href: "/",
-  image: null,
+  image: undefined,
   width: 50,
   height: 20,
   color: "#000000"
 }
 
-const defaultNavItems: NavItem[] = [
+export const defaultNavItems: NavItem[] = [
   {
     text: "Courses",
     href: "/courses",
@@ -107,7 +109,7 @@ export const Header: React.FC<HeaderProps> = ({
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const router = useRouter();
+  // const router = useRouter();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -126,7 +128,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const handleNavClick = (href: string) => {
     handleCloseNavMenu();
-    router.push(href);
+    // router.push(href);
   };
 
   return (
@@ -251,25 +253,27 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Desktop menu */}
           <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => (
-              <Button
-                key={item.text}
-                onClick={() => handleNavClick(item.href)}
-                sx={{
-                  my: 2,
-                  ml: 2,
-                  display: "block",
-                  ...(item.color ?
-                    (item.variant === 'contained' ? { bgcolor: item.color, color: item.textColor || 'white' } : { color: item.color, borderColor: item.color })
-                    : {}),
-                  ...(item.textColor && item.variant !== 'contained' ? { color: item.textColor } : {}),
-                }}
-                variant={item.variant}
-                size={item.size}
-                fullWidth={item.fullWidth}
-                disableElevation={item.disableElevation}
-              >
-                {item.text}
-              </Button>
+              <Link key={item.text} href={item.href} sx={{ textDecoration: 'none' }}>
+                <Button
+                  key={item.text}
+                  // onClick={() => handleNavClick(item.href)}
+                  sx={{
+                    my: 2,
+                    ml: 2,
+                    display: "block",
+                    ...(item.color ?
+                      (item.variant === 'contained' ? { bgcolor: item.color, color: item.textColor || 'white' } : { color: item.color, borderColor: item.color })
+                      : {}),
+                    ...(item.textColor && item.variant !== 'contained' ? { color: item.textColor } : {}),
+                  }}
+                  variant={item.variant}
+                  size={item.size}
+                  fullWidth={item.fullWidth}
+                  disableElevation={item.disableElevation}
+                >
+                  {item.text}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
@@ -293,7 +297,7 @@ export const HeaderConfig = {
         color: {
           type: "custom",
           label: "Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -306,7 +310,7 @@ export const HeaderConfig = {
     backgroundColor: {
       type: "custom",
       label: "Background Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -333,7 +337,7 @@ export const HeaderConfig = {
         textColor: {
           type: "custom",
           label: "Text Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -344,7 +348,7 @@ export const HeaderConfig = {
         color: {
           type: "custom",
           label: "Button Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}

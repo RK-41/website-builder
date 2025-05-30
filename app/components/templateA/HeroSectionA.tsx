@@ -19,7 +19,7 @@ interface HeroButton {
   disableElevation?: boolean;
 }
 
-export interface HeroSectionProps {
+export interface HeroSectionAProps {
   heading: string;
   subheading: string;
   buttons: HeroButton[];
@@ -28,7 +28,7 @@ export interface HeroSectionProps {
   subheadingColor?: string;
 }
 
-const defaultButtons: HeroButton[] = [
+export const defaultButtons: HeroButton[] = [
   {
     text: "Get Started",
     href: "#",
@@ -51,7 +51,7 @@ const defaultButtons: HeroButton[] = [
   },
 ];
 
-export const HeroSection: React.FC<HeroSectionProps> = ({
+export const HeroSectionA: React.FC<HeroSectionAProps> = ({
   heading,
   subheading,
   buttons = defaultButtons,
@@ -132,7 +132,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   );
 };
 
-export const HeroSectionConfigA = {
+export const HeroSectionAConfig = {
   label: "Hero Section",
   fields: {
     heading: { type: "text", label: "Heading" },
@@ -140,7 +140,7 @@ export const HeroSectionConfigA = {
     backgroundColor: {
       type: "custom",
       label: "Background Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -151,7 +151,7 @@ export const HeroSectionConfigA = {
     headingColor: {
       type: "custom",
       label: "Heading Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -162,7 +162,7 @@ export const HeroSectionConfigA = {
     subheadingColor: {
       type: "custom",
       label: "Subheading Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -189,7 +189,7 @@ export const HeroSectionConfigA = {
         textColor: {
           type: "custom",
           label: "Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -200,7 +200,7 @@ export const HeroSectionConfigA = {
         color: {
           type: "custom",
           label: "Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -244,5 +244,5 @@ export const HeroSectionConfigA = {
     headingColor: "#ffffff",
     subheadingColor: "#e0e0e0"
   },
-  render: (props: HeroSectionProps) => <HeroSection {...props} />,
+  render: (props: HeroSectionAProps) => <HeroSectionA {...props} />,
 };

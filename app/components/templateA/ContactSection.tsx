@@ -20,7 +20,7 @@ interface SubmitButtonProps {
   disableElevation?: boolean;
 }
 
-const defaultSubmitButton: SubmitButtonProps = {
+export const defaultSubmitButton: SubmitButtonProps = {
   text: "Submit",
   textColor: "#ffffff",
   color: "#1976d2",
@@ -65,7 +65,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   });
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState(null)
-  const [error, setError] = useState(null)
+  const [error, setError] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -264,7 +264,7 @@ export const ContactSectionConfig = {
         textColor: {
           type: "custom",
           label: "Text Color Field",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -275,7 +275,7 @@ export const ContactSectionConfig = {
         color: {
           type: "custom",
           label: "Button Color Field",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -313,7 +313,7 @@ export const ContactSectionConfig = {
     backgroundColor: {
       type: "custom",
       label: "Background Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -324,7 +324,7 @@ export const ContactSectionConfig = {
     formBackgroundColor: {
       type: "custom",
       label: "Form Background Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}

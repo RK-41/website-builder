@@ -1,11 +1,10 @@
-// app/components/CustomLink.tsx
 import React from 'react';
 import { ComponentConfig } from '@measured/puck';
 import { Link } from '@mui/material';
 
-export interface CustomLinkProps {
+export type CustomLinkProps = {
   href: string;
-  children: React.ReactNode;
+  children: string; // Changed to string for Puck compatibility
   variant?: 'body1'
   | 'body2'
   | 'button'
@@ -32,24 +31,22 @@ export interface CustomLinkProps {
   | 'textDisabled'
   | string;
   underline?: 'always' | 'hover' | 'none';
-  sx?: object;
+  // sx is not configurable via Puck in this example
 }
 
-export const CustomLink: React.FC<CustomLinkProps> = ({
+export const CustomLink = ({
   href,
   children,
-  variant = 'body1' as CustomLinkProps['variant'],
+  variant = 'body1',
   color = 'primary',
   underline = 'always',
-  sx = {},
-}) => {
+}: CustomLinkProps) => {
   return (
     <Link
       href={href}
       underline={underline}
       sx={{
         color: variant === 'contained' ? color : 'inherit',
-        ...sx,
       }}
     >
       {children}
@@ -57,8 +54,7 @@ export const CustomLink: React.FC<CustomLinkProps> = ({
   );
 };
 
-// Component configuration
-export const CustomLinkConfig: ComponentConfig<CustomLinkProps> = {
+export const CustomLinkConfig = {
   label: 'Custom Link',
   fields: {
     href: {
@@ -117,23 +113,17 @@ export const CustomLinkConfig: ComponentConfig<CustomLinkProps> = {
         { value: 'none', label: 'None' },
       ],
     },
-    sx: {
-      label: 'Custom Styles',
-      type: 'text',
-    },
+    // sx is not configurable via Puck in this example
   },
   defaultProps: {
     href: '#',
     children: 'Link Text',
-    variant: 'text',
+    variant: 'body1', // Changed to a valid variant
     color: 'primary',
-    underline: 'always',
-    sx: {},
+    underline: 'always' as const,
   },
-  render: ({ href, children, variant, color, underline, sx }: CustomLinkProps) => (
-    <CustomLink href={href} variant={variant} color={color} underline={underline} sx={sx}>
-      {children}
-    </CustomLink>
+  render: (props: CustomLinkProps) => (
+    <CustomLink {...props} />
   )
 };
 

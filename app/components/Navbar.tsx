@@ -17,15 +17,29 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import Image from "next/image";
+import { ComponentConfig, DefaultComponentProps } from "@measured/puck";
 
-const navItems = [
-  { label: "Join Slack", href: "#" },
-  { label: "Browse Topics", href: "#" },
-  { label: "Random Item", href: "#" },
-  { label: "Experts", href: "#" },
-];
+interface NavItem {
+  label: string;
+  href: string;
+}
 
-export const ResponsiveNavbar: React.FC = () => {
+interface ResponsiveNavbarProps {
+  logoUrl: string;
+  links: NavItem[];
+  avatarUrl: string;
+  username: string;
+}
+
+// Extend the ResponsiveNavbarProps with DefaultComponentProps
+// type NavbarProps = ResponsiveNavbarProps & DefaultComponentProps;
+
+export const ResponsiveNavbar: React.FC<ResponsiveNavbarProps> = ({
+  logoUrl,
+  links,
+  avatarUrl,
+  username,
+}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -44,7 +58,7 @@ export const ResponsiveNavbar: React.FC = () => {
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Link href="#">
             <Image
-              src="https://merakiui.com/images/full-logo.svg"
+              src={logoUrl}
               alt="Logo"
               width={100}
               height={28}
@@ -65,7 +79,7 @@ export const ResponsiveNavbar: React.FC = () => {
         {/* Desktop Navigation */}
         {!isMobile && (
           <Box display="flex" alignItems="center">
-            {navItems.map((item) => (
+            {links.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
@@ -91,7 +105,7 @@ export const ResponsiveNavbar: React.FC = () => {
             </IconButton>
 
             <Avatar
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=334&q=80"
+              src={avatarUrl}
               alt="avatar"
               sx={{ width: 36, height: 36 }}
             />
@@ -110,7 +124,7 @@ export const ResponsiveNavbar: React.FC = () => {
             bgcolor={theme.palette.background.paper}
             sx={{ borderTop: `1px solid ${theme.palette.divider}` }}
           >
-            {navItems.map((item) => (
+            {links.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
@@ -135,11 +149,11 @@ export const ResponsiveNavbar: React.FC = () => {
                 <NotificationsIcon />
               </IconButton>
               <Avatar
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=334&q=80"
+                src={avatarUrl}
                 alt="avatar"
               />
               <Typography variant="body2" ml={1}>
-                Alpha Num Erik
+                {username}
               </Typography>
             </Box>
           </Box>
@@ -149,42 +163,35 @@ export const ResponsiveNavbar: React.FC = () => {
   );
 };
 
-export const NavbarConfig = {
+export interface NavbarProps {
+  logoUrl: string;
+  links: { label: string; href: string }[];
+  avatarUrl: string;
+  username: string;
+}
+
+export const NavbarConfig: ComponentConfig<NavbarProps> = {
   label: "Navbar",
   fields: {
     logoUrl: {
       type: "text",
       label: "Logo Image URL",
-      defaultValue: "https://merakiui.com/images/full-logo.svg",
     },
     links: {
       type: "array",
       label: "Navigation Links",
-      defaultValue: [
-        { label: "Join Slack", href: "#" },
-        { label: "Browse Topics", href: "#" },
-        { label: "Random Item", href: "#" },
-        { label: "Experts", href: "#" },
-      ],
-      item: {
-        type: "object",
-        label: "Link",
-        fields: {
-          label: { type: "text", label: "Label" },
-          href: { type: "text", label: "URL" },
-        },
+      arrayFields: {
+        label: { type: "text", label: "Label" },
+        href: { type: "text", label: "URL" },
       },
     },
     avatarUrl: {
       type: "text",
       label: "Avatar Image URL",
-      defaultValue:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=334&q=80",
     },
     username: {
       type: "text",
       label: "Username (Mobile Only)",
-      defaultValue: "Alpha Num Erik",
     },
   },
   defaultProps: {
@@ -199,5 +206,5 @@ export const NavbarConfig = {
       { label: "Experts", href: "#" },
     ],
   },
-  render: (props) => <ResponsiveNavbar {...props} />,
+  render: (props: NavbarProps) => <ResponsiveNavbar {...props} />,
 };

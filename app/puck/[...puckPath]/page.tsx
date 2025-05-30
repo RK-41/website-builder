@@ -11,6 +11,7 @@
  * NB this route is public, and you will need to add authentication
  */
 
+import React from 'react';
 import "@measured/puck/puck.css";
 import { Client } from "./client";
 import { Metadata } from "next";

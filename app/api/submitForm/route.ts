@@ -1,3 +1,5 @@
+// Basic api endpoint to test contact us form submission
+
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {

@@ -10,6 +10,7 @@
  * will invalidate the cache as the page is written in /api/puck/route.ts
  */
 
+import React from 'react';
 import { Client } from "./client";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";

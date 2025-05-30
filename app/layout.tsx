@@ -12,13 +12,15 @@ import "./styles.css";
 //   );
 // }
 
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'; // Adjust version based on Next.js version
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en">
       <body>
-        <AppRouterCacheProvider>
+        {/* Trying enableCssLayer for the issue with elements inside editor canvas not getting their styles in prod build */}
+
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           {children}
         </AppRouterCacheProvider>
       </body>

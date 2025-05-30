@@ -107,5 +107,5 @@ export const CardBConfig = {
     date: "21 SEP 2015",
     href: "#",
   },
-  render: (props) => <CardB {...props} />,
+  render: (props: CardBProps) => <CardB {...props} />,
 };

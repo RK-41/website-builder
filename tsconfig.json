@@ -1,8 +1,32 @@
 {
   "extends": "./tsconfig/nextjs.json",
   "compilerOptions": {
-    "plugins": [{ "name": "next" }]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strict": true,
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "ssr-test.tsx",
+    "ssr-test.jsx",
+    "ssr-test.js",
+    "ssr-test.mjs",
+    "app/**/*",
+    "webpack.config.mjs"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

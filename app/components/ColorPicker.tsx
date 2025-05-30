@@ -18,7 +18,7 @@ export const ColorPickerConfig: ComponentConfig<ColorPickerProps> = {
     color: {
       type: "custom",
       label: "Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}

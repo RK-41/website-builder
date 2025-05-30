@@ -10,6 +10,7 @@ import {
   SvgIcon,
 } from "@mui/material";
 import { ExpandMore, Add, Remove, ExpandLess, ExpandLessTwoTone } from "@mui/icons-material";
+import { ComponentConfig } from "@measured/puck";
 
 interface FAQItem {
   question: string;
@@ -121,8 +122,13 @@ export const FAQSection: React.FC<FAQProps> = ({ title, faqs }) => {
   );
 };
 
+export interface FaqSectionProps {
+  title: string;
+  faqs: { question: string; answer: string }[];
+}
+
 // Puck config definition for this component:
-export const FaqSectionConfig = {
+export const FaqSectionConfig: ComponentConfig<FaqSectionProps> = {
   label: "FAQ Section",
   fields: {
     title: {

@@ -30,7 +30,7 @@ export interface CategoriesProps {
   backgroundColor: string;
 }
 
-const defaultSectionButtons: SectionButton[] = [
+export const defaultSectionButtons: SectionButton[] = [
   {
     text: "Get Started",
     href: "#",
@@ -195,7 +195,7 @@ export const CategoriesConfig = {
         textColor: {
           type: "custom",
           label: "Text Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -206,7 +206,7 @@ export const CategoriesConfig = {
         color: {
           type: "custom",
           label: "Button Color",
-          render: ({ value, onChange }) => (
+          render: ({ value, onChange }: { value: any, onChange: any }) => (
             <MuiColorInput
               value={value}
               onChange={onChange}
@@ -245,7 +245,7 @@ export const CategoriesConfig = {
     backgroundColor: {
       type: "custom",
       label: "Background Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}

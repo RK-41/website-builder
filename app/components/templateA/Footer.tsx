@@ -19,7 +19,7 @@ interface FooterLink {
   href: string;
 }
 
-export interface FooterProps {
+export interface FooterAProps {
   getInTouchHeading: string;
   getInTouchText: string;
   chatHeading: string;
@@ -37,7 +37,7 @@ export interface FooterProps {
   textColor?: string;
 }
 
-export const Footer: React.FC<FooterProps> = ({
+export const FooterA: React.FC<FooterAProps> = ({
   getInTouchHeading,
   getInTouchText,
   chatHeading,
@@ -161,7 +161,7 @@ export const Footer: React.FC<FooterProps> = ({
   );
 };
 
-export const FooterConfigA = {
+export const FooterAConfig = {
   label: "Footer",
   fields: {
     getInTouchHeading: { type: "text", label: "Get in Touch Heading" },
@@ -195,7 +195,7 @@ export const FooterConfigA = {
     textColor: {
       type: "custom",
       label: "Text Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -206,7 +206,7 @@ export const FooterConfigA = {
     backgroundColor: {
       type: "custom",
       label: "Background Color",
-      render: ({ value, onChange }) => (
+      render: ({ value, onChange }: { value: any, onChange: any }) => (
         <MuiColorInput
           value={value}
           onChange={onChange}
@@ -235,5 +235,5 @@ export const FooterConfigA = {
     textColor: '#ffffff',
     backgroundColor: '#0077cc',
   },
-  render: (props: FooterProps) => <Footer {...props} />,
+  render: (props: FooterAProps) => <FooterA {...props} />,
 }; 

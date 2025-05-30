@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Container, Divider, Typography, Link, Stack, IconButton } from '@mui/material';
 import { Facebook, GitHub, Reddit } from '@mui/icons-material';
+import Image from 'next/image';
+import { ComponentConfig } from '@measured/puck';
 
 export const iconMap = {
   Facebook: <Facebook fontSize="small" />,
@@ -8,7 +10,7 @@ export const iconMap = {
   Reddit: <Reddit fontSize="small" />,
 };
 
-type FooterProps = {
+export interface FooterProps {
   logo: {
     src: string;
     alt: string;
@@ -24,7 +26,7 @@ type FooterProps = {
     href: string;
   }[];
   copyright: string;
-};
+}
 
 export const Footer = ({
   logo,
@@ -37,7 +39,7 @@ export const Footer = ({
       <Container maxWidth="lg">
         <Stack alignItems="center" spacing={2} textAlign="center">
           <Link href={logo.href}>
-            <img src={logo.src} alt={logo.alt} className="h-7 w-auto" />
+            <Image src={logo.src} alt={logo.alt} className="h-7 w-auto" />
           </Link>
 
           <Stack direction="row" flexWrap="wrap" justifyContent="center" spacing={2} mt={2}>
@@ -89,13 +91,13 @@ export const Footer = ({
   );
 };
 
-export const FooterConfig = {
+export const FooterConfig: ComponentConfig<FooterProps> = {
   label: 'Footer',
   fields: {
     logo: {
       label: 'Logo',
       type: 'object',
-      fields: {
+      objectFields: {
         src: { label: 'Image URL', type: 'text' },
         alt: { label: 'Alt Text', type: 'text' },
         href: { label: 'Link URL', type: 'text' },
@@ -153,5 +155,5 @@ export const FooterConfig = {
     ],
     copyright: '© Copyright 2021. All Rights Reserved.',
   },
-  render: (props) => <Footer {...props} />,
+  render: (props: FooterProps) => <Footer {...props} />,
 };

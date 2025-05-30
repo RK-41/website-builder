@@ -24,7 +24,7 @@ type TableRowData = {
   [key: string]: any;
 };
 
-type AdvancedTableProps = {
+export type AdvancedTableProps = {
   title?: string;
   description?: string;
   columns: TableColumn[];
